@@ -27,7 +27,11 @@
 	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
 	<config name="minimum_supported_wp_version" value="5.8"/>
 	<rule ref="WordPress">
+		<exclude name="PEAR.Functions.FunctionCallSignature"/>
 		<exclude name="Squiz.Commenting.FileComment.Missing"/>
+		<exclude name="WordPress.Security.EscapeOutput.OutputNotEscaped"/>
+		<exclude name="WordPress.WP.I18n.MissingArgDomain"/>
+		<exclude name="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound"/>
 	</rule>
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
